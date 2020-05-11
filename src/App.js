@@ -2,28 +2,29 @@ import React from "react";
 import "./App.css";
 import { Menu } from "./subcomponents/menu";
 import { Stars } from "./subcomponents/stars";
-
-import { Planet } from "./subcomponents/planet";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Slider from './subcomponents/slider'
-import 'react-awesome-slider/dist/custom-animations/cube-animation.css';
-
+import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import "react-awesome-slider/dist/custom-animations/cube-animation.css";
+import { Homepage } from "./pages/home";
+import { Projects } from "./pages/projects";
+import {Skills} from './pages/Skills'
 
 function App() {
   return (
-    
- <div>
-        <div className="alwaysthere">
-          <Stars />
-          
-         <div className="menu"><Menu /></div> 
-          
-</div>
-<div className="slider">
-          <Slider />
-          
-        </div>
-        </div>
+    <div>
+      <div className="alwaysthere">
+        <Stars />
+        <Menu />
+      </div>
+      <div className="willchange">
+        <Router>
+          <Switch>
+          <Route path="/"><Homepage /></Route>
+          <Route path="/Projects"><Projects /></Route>
+          <Route path="/Skills"><Skills /></Route>
+          </Switch>
+</Router>
+      </div>
+    </div>
   );
 }
 

@@ -20,9 +20,9 @@ export const Menu = () => (
     <Router>
     <ul id="menu">
       <Link to="/"><li>Home</li></Link>
-      <Link to="/"><li>Home</li></Link>
-      <Link to="/"><li>Home</li></Link>
-      <Link to="/"><li>About</li></Link>
+      <Link to="/Projects"><li>Projects</li></Link>
+      <Link to="/Skills"><li>Skills</li></Link>
+      
      
     </ul>
     </Router>

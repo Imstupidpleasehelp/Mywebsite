@@ -6,7 +6,7 @@ export const Stars = () => <div>
 params={{
 	    "particles": {
 	        "number": {
-	            "value": 85,
+	            "value": 125,
 	            "density": {
 	                "enable": true,
 	                "value_area": 1500

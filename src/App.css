@@ -3,23 +3,11 @@ body {
   width: 100% !important;
   color: white;
   height: 100% !important;
-  overflow: none;
-}
-.alwaysthere {
-  background-color: black;
-  z-index: 3;
-  overflow: none;
-  position: absolute;
   
 }
-.slider {
-  
-  z-index: 1;
- background-color: black;
-}
-.starbackground {
-  
-}
+
+
+
 /* menu start */ 
 
  
@@ -199,13 +187,5 @@ body {
   }
   100%{
     background-position-x:-600px;
-  }
-}
-@keyframes rotatePlanet{
-  0%{
-    transform:rotateZ(0);
-  }
-  100%{
-    transform:rotateZ(-120deg);
   }
 }
