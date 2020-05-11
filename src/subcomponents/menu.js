@@ -1,5 +1,10 @@
 import React from 'react';
-
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 export const Menu = () => (
 <nav role="navigation">
@@ -12,14 +17,15 @@ export const Menu = () => (
     <span></span>
     <span></span>
     
-    
+    <Router>
     <ul id="menu">
-      <a href="#"><li>Home</li></a>
-      <a href="#"><li>About</li></a>
-      <a href="#"><li>Info</li></a>
-      <a href="#"><li>Contact</li></a>
-      <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+      <Link to="/"><li>Home</li></Link>
+      <Link to="/"><li>Home</li></Link>
+      <Link to="/"><li>Home</li></Link>
+      <Link to="/about"><li>About</li></Link>
+     
     </ul>
+    </Router>
   </div>
 </nav>
 )
