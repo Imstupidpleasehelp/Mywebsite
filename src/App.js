@@ -13,14 +13,14 @@ function App() {
   return (
     
  <div>
-        <div className="">
-          <Planet />
-          <Menu />
+        <div className="alwaysthere">
           <Stars />
-          <Slider />
-</div>
-<div>
           
+         <div className="menu"><Menu /></div> 
+          
+</div>
+<div className="slider">
+          <Slider />
           
         </div>
         </div>

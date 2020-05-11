@@ -2,7 +2,7 @@ import React from "react";
 import Particles from 'react-particles-js'
 
 export const Stars = () => <div>
-<Particles 
+<Particles  className="starbackground"
 params={{
 	    "particles": {
 	        "number": {
@@ -34,7 +34,7 @@ params={{
 	    "interactivity": {
 	        "events": {
 	            "onclick": {
-	                "enable": true,
+	                "enable": false,
 	                "mode": "push"
 	            }
 	        },
